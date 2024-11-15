@@ -8,6 +8,11 @@ export enum ChainId {
   OPTIMISM = 10,
   SCROLL = 534352,
   SCROLL_SEPOLIA = 534351,
+  SONIC_TESTNET = 64165,
+  SONEIUM_TESTNET = 1946,
+  UNICHAIN = 130, 
+  WORLDCHAIN = 480,
+
 }
 
 export const SUPPORTED_CHAINS = [
@@ -17,6 +22,12 @@ export const SUPPORTED_CHAINS = [
   ChainId.SCROLL,
   ChainId.ARBITRUM,
   ChainId.MODE,
+  ChainId.OPTIMISM,
+  ChainId.SONEIUM_TESTNET,
+  ChainId.SONIC_TESTNET,
+  ChainId.UNICHAIN,
+
+
 ] as const;
 export type SupportedChainsType = typeof SUPPORTED_CHAINS[number];
 
@@ -25,10 +36,12 @@ export const SUPPORTED_TESTNET_CHAINS = [
   ChainId.SCROLL_SEPOLIA,
   ChainId.FRAX_TESTNET,
   ChainId.MODE_TESTNET,
+  ChainId.SONEIUM_TESTNET,
 ] as const;
 export type SupportedTestnetChainsType = typeof SUPPORTED_TESTNET_CHAINS[number];
 
 export enum NativeCurrencyName {
   // Strings match input for CLI
   ETHER = 'ETH',
+  S = 'S',
 }
