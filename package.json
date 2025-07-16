@@ -30,7 +30,7 @@
     "@ethersproject/abi": "^5.0.12",
     "@ethersproject/address": "^5.0.2",
     "@ethersproject/contracts": "^5",
-    "@ethersproject/providers": "5",
+    "@ethersproject/providers": "5.8.0",
     "@ethersproject/solidity": "^5.0.9",
     "big.js": "^5.2.2",
     "decimal.js-light": "^2.5.0",
